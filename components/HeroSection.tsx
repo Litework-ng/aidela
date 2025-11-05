@@ -13,7 +13,7 @@ export default function HeroSection() {
 
       <div className="relative container mx-auto grid gap-10 md:grid-cols-2 items-center py-20 px-6">
         {/* Left text section */}
-        <div>
+        <div className="relative z-20 bg-white/80 backdrop-blur-sm p-4 rounded-lg md:bg-transparent md:backdrop-blur-0 md:p-0">
           <motion.h1
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
