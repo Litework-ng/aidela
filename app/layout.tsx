@@ -23,7 +23,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${inter.className}`}>
+    <html lang="en" className={`${inter.variable} ${inter.className}`} >
+      <meta name="color-scheme" content="light" />
+      <meta name="supported-color-schemes" content="light" />
+      <meta name="theme-color" content="#ffffff" />
+
       <body className="antialiased bg-white text-neutral-900 ">
         <Navbar />
         <main className ='container mx-auto px-4 sm:px-6 lg:px-8'>{children}</main>
