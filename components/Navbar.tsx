@@ -67,8 +67,8 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="md:hidden border-t border-neutral-200 bg-white">
-          <nav className="flex flex-col px-4 py-3 space-y-3">
+        <div className="md:hidden fixed inset-x-0 top-[64px] bg-white border-t border-neutral-200 shadow-md">
+          <nav className="flex flex-col px-4 py-4 space-y-4">
             <Link
               href="/services"
               className="text-neutral-700 hover:text-primary"

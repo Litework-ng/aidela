@@ -4,14 +4,15 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#fdf2f8] via-white to-[#f0f9ff]">
-      {/* subtle background gradient accent */}
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#fdf2f8] via-white to-[#f0f9ff] text-neutral-900">
+      {/* subtle background gradient accents */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[-10%] right-[-10%] w-72 h-72 bg-[#ED1E79]/20 blur-3xl rounded-full" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-72 h-72 bg-[#0649B5]/10 blur-3xl rounded-full" />
+        <div className="absolute top-[-10%] right-[-10%] w-72 h-72 bg-[#ED1E79]/25 blur-3xl rounded-full" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-72 h-72 bg-[#0649B5]/15 blur-3xl rounded-full" />
       </div>
 
       <div className="relative container mx-auto grid gap-10 md:grid-cols-2 items-center py-20 px-6">
+        {/* Left text section */}
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 8 }}
@@ -27,11 +28,11 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.15, duration: 0.5 }}
-            className="mt-5 text-neutral-700 max-w-xl text-base leading-relaxed"
+            className="mt-5 text-neutral-800 md:text-neutral-700 max-w-xl text-base leading-relaxed"
           >
-            We help companies scale with skilled remote teams — from engineers
-            and designers to growth marketers. Fast vetting, transparent pricing,
-            and ongoing upskilling.
+            We help companies scale with skilled remote teams — from engineers,
+            designers to growth marketers. Fast vetting, transparent pricing, and
+            ongoing upskilling.
           </motion.p>
 
           <motion.div
@@ -49,7 +50,7 @@ export default function HeroSection() {
 
             <a
               href="/for-employers"
-              className="inline-flex items-center rounded-lg border border-neutral-300 px-6 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50 transition"
+              className="inline-flex items-center rounded-lg border border-neutral-300 px-6 py-3 text-sm font-medium text-neutral-800 hover:bg-neutral-50 transition"
             >
               For employers
             </a>
